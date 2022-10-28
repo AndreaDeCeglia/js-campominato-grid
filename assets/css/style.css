@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#total-container{
+    width: 100vw;
+    height: 100vh;
+}
+
+#game-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.quadrato10,
+.quadrato9,
+.quadrato7
+{
+    border: 1px solid black;
+    aspect-ratio: 1 / 1;
+}
+
+.quadrato10{
+    width: calc( 100%/10);
+}
+
+
+.quadrato9{
+    width: calc( 100%/9);
+}
+
+.quadrato7{
+    width: calc( 100%/7);
+}
+
+
+.active{
+    background-color: lightcoral;
+}
