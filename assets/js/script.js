@@ -36,9 +36,10 @@ function xxx(difficulty, squares){
 
     //createSquare(squares);
 
-    for( let i = 0; i < difficulty; i++ ){
+    for( let i = 1; i <= difficulty; i++ ){
 
         let elementoCorrente = createSquare(squares);
+        elementoCorrente.innerHTML = i;
         console.log(elementoCorrente);
       
         elementoCorrente.addEventListener('click', function(){
