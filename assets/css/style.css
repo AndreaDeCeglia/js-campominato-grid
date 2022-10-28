@@ -14,8 +14,9 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 80%;
+    width: 40%;
     margin: 0 auto;
+    /* aspect-ratio: 1/1; */
 }
 
 .quadrato10,

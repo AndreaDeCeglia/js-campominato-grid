@@ -21,45 +21,46 @@
 
   <body>
     <!-- total container of the page -->
-    <div id="total-container">
+    <div id="total-container m-0">
       <!-- upper part - navbar -->
-      <nav class="navbar bg-light container-fluid">
+      
+        <nav class="navbar bg-light container-fluid h-50 p-1">
         <!-- logo's spot -->
-        <div class="d-flex row justify-content-between align-items-center">
-          <div>
-            <a class="navbar-brand" href="#">
-              <img
-                src="/docs/5.2/assets/brand/bootstrap-logo.svg"
-                alt="Bootstrap"
-                width="30"
-                height="24"
-              />
-            </a>
-          </div>
+            <span>
+                <div>
+                    <a class="navbar-brand" href="#">
+                        <img
+                        src="/docs/5.2/assets/brand/bootstrap-logo.svg"
+                        alt="Bootstrap"
+                        width="30"
+                        height="24"
+                        />
+                    </a>
+                </div>
+            </span>
 
-          <div class="input-group col-sm-6 d-inline-block">
-            <select
-              class="form-select"
-              id="inputGroupSelect04"
-              aria-label="Example select with button addon"
-            >
-              <option selected>Choose the difficulty</option>
-              <option value="easy">easy</option>
-              <option value="medium">medium</option>
-              <option value="hard">hard</option>
-            </select>
+            <span class="input-group w-50">
+                <select
+                  class="form-select"
+                  id="inputGroupSelect04"
+                  aria-label="Example select with button addon"
+                >
+                  <option value="easy">easy</option>
+                  <option value="medium">medium</option>
+                  <option value="hard">hard</option>
+                </select>
+    
+                <button id="play-btn" onclick="yyy(); return false" class="btn btn-outline-secondary" type="button">
+                  Play
+                </button>
+            </span>
+        </nav>
 
-            <button class="btn btn-outline-secondary" type="button">
-              Play
-            </button>
-          </div>
-        </div>
-
-        <!-- input's spot -->
-      </nav>
+        <div id="game-container" class="my-4"></div>
+        
     </div>
 
-    <div id="game-container" class="greed"></div>
+    
 
     <!-- my script.js -->
     <script src="./assets/js/script.js"></script>
