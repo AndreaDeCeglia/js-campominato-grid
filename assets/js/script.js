@@ -50,7 +50,7 @@ function createGrid(difficulty, squares){
       
         createdSquare.addEventListener('click', function(){
             console.log( "this keyword",this);
-            this.classList.toggle('active');
+            this.classList.toggle('acid-button');
         })
       
         grid.append( createdSquare );
