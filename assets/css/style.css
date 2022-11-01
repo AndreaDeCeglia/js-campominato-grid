@@ -25,6 +25,9 @@
 {
     border: 1px solid black;
     aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .quadrato10{

@@ -1,4 +1,4 @@
-function yyy(){
+function play(){
 
     document.getElementById('game-container').innerHTML = '';
     //pick the value of the choise
@@ -7,18 +7,24 @@ function yyy(){
 
     switch(choise){
         case "easy":
-            xxx(100, "quadrato10");
+            createGrid(100, "quadrato10");
             break;
         case "medium":
-            xxx(81, "quadrato9");
+            createGrid(81, "quadrato9");
             break;
         case "hard":
-            xxx(49, "quadrato7");
+            createGrid(49, "quadrato7");
             break;
     }
 }
 
 
+//creation of squary div into the grid
+function createSquare(squares){
+    const div = document.createElement('div');
+    div.classList.add(squares);
+    return div;
+}
 
 
 
@@ -26,11 +32,11 @@ function yyy(){
 
 
 //creation of different kind of grids
-function xxx(difficulty, squares){
+function createGrid(difficulty, squares){
 
     //pick the element where the grid will take place
     let grid = document.getElementById('game-container');
-    console.log( grid );
+    console.log( "grid", grid );
 
     //let difficulty = choise.value;
 
@@ -38,25 +44,18 @@ function xxx(difficulty, squares){
 
     for( let i = 1; i <= difficulty; i++ ){
 
-        let elementoCorrente = createSquare(squares);
-        elementoCorrente.innerHTML = i;
-        console.log(elementoCorrente);
+        let createdSquare = createSquare(squares);
+        createdSquare.innerHTML = i;
+        console.log('createdSquare', createdSquare);
       
-        elementoCorrente.addEventListener('click', function(){
-            console.log(this);
+        createdSquare.addEventListener('click', function(){
+            console.log( "this keyword",this);
             this.classList.toggle('active');
         })
       
-        grid.append( elementoCorrente );
+        grid.append( createdSquare );
       
     }
 
     
-}
-
-//creation of squary div into the grid
-function createSquare(squares){
-    const div = document.createElement('div');
-    div.classList.add(squares);
-    return div;
 }
