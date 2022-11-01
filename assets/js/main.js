@@ -1,4 +1,4 @@
-// write the function linked to button's click
+// function linked to button's click
 function play(){
 
     //setting the generation of a uniqe grid, not one each click event
@@ -21,8 +21,17 @@ function play(){
         case "hard":
             gridGeneration (49, "quadrato7");
             break;
-            
+
     }
 }
 
-function 
+// function of squares' creation
+function squareCreation(squares){
+
+    let div = document.createElement("div");
+    
+    div.classList.add(squares);
+
+    return div;
+
+}
