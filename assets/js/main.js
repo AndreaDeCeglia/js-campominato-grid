@@ -43,7 +43,7 @@ function gridGeneration( difficulty, squares){
     let grid = document.getElementById("game-container");
     console.log("this is the grid", grid);
 
-    for( i=1; i<difficulty; i++ ){
+    for( let i=1; i<difficulty; i++ ){
         
         //initializzation variable of created squares threw the dedicated function
         let createdSquare = squareCreation(squares);

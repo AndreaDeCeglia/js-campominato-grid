@@ -4,10 +4,23 @@
     box-sizing: border-box;
 }
 
+body{
+    background-image: url('https://img.freepik.com/premium-photo/bright-green-lawn-close-up-view-from-acid-green-color_96872-896.jpg?w=740');
+}
+
 #total-container{
     width: 100vw;
     height: 100vh;
-    background-image: url('https://img.freepik.com/premium-photo/bright-green-lawn-close-up-view-from-acid-green-color_96872-896.jpg?w=740');
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input-group{
+    width: 20%;
 }
 
 #game-container{

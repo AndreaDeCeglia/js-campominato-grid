@@ -24,24 +24,28 @@
     <div id="total-container m-0">
       <!-- upper part - navbar -->
       
-        <nav class="navbar bg-light container-fluid h-50 p-1">
+        <nav class="navbar container-fluid h-50 p-1">
         <!-- logo's spot -->
             <span>
                 <div>
                     <a class="navbar-brand" href="#">
-                        <img
-                        src="/docs/5.2/assets/brand/bootstrap-logo.svg"
-                        alt="Bootstrap"
-                        width="30"
-                        height="24"
-                        />
+                        <h4 class="acid-button">
+                          MINEFIELD
+                        </h4>
                     </a>
                 </div>
             </span>
 
-            <span class="input-group w-50">
+            <span>
+              <h6 class="acid-button">
+                choose the level .. Good Luck !!! --->
+              </h6>
+            </span>
+            
+            <!-- input group spot / difficulty choise and play-btn -->
+            <span class="input-group">
                 <select
-                  class="form-select"
+                  class="form-select acid-button"
                   id="inputGroupSelect04"
                   aria-label="Example select with button addon"
                 >
@@ -50,23 +54,23 @@
                   <option value="hard">hard</option>
                 </select>
     
-                <button id="play-btn" onclick="play(); return false" class="btn btn-outline-secondary" type="button">
+                <button id="play-btn" onclick="play(); return false" class="btn acid-button" type="button">
                   Play
                 </button>
             </span>
         </nav>
 
-        <div id="game-container" class="my-4"></div>
+        <div id="game-container" class="my-4 acid-button"></div>
         
     </div>
 
     
     <!-- my main.js -->
-    <!-- <script src="./assets/js/main.js"></script> -->
+    <script src="./assets/js/main.js"></script>
 
 
     <!-- my script.js -->
-    <script src="./assets/js/script.js"></script>
+    <!-- <script src="./assets/js/script.js"></script> -->
 
 
     <!-- Bootstrap script -->
